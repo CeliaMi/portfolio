@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    --gren-color: #1FCE9C;
+    --orange-color: #F8AE65;
+    --blue-color: #8498D6;
+    font-family: Helvetica, sans-serif;
+  }
+
+  body{
+    width: 100vw;
+  }
+
+  header{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-weight: bold;
+    width: 100vw;
+  }
+
+  nav {
+    position: fixed;
+    position: top;
+    z-index:100;
+    font-size: 0.5rem;
+  }
+
+
+  nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+  }
+
+
+section{
+    min-height: 100vh;
+    width: 100vw;
+}
+
+/* HOME */
+
+.home{
+    background-color:var(--gren-color);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.greet-title{
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 1%;
+}
+
+.greet-subtitle{
+    font-size: 1rem;
+    color: white;
+    margin-bottom: 1%;
+}
+
+.greet-icon{
+    height: 5%;
+    width: 5%;
+}
+
+.greet-icon img{
+    height: 100%;
+    width: 100%;
+}
+
+/* WORK */
+
+.work{
+    background-color: var(--blue-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+    padding-top: 8%;
+    padding-bottom: 8%;
+}
+
+.project{
+    display: flex;
+    margin: 3%;
+    border-radius: 3px;
+    background-color: white;
+    width: 80%;
+    min-height: 50vh;
+}
+
+.container__project-info{
+    height: auto;
+    width: 50%;
+    padding: 10%;
+}
+
+.project-subtitle{
+    font-size: 0,7rem;
+}
+
+.project-description{
+    font-size: 0.5rem;
+}
+
+.project__figure{
+    width: 50%;
+    border-radius: 2px;
+}
+
+.project__figure__img{
+    width: 100%;
+    height: 80%;
+    background-color: #f7f5f0;
+    border-radius: 2px;
+}
+
+
+figcaption {
+    width: 100%;
+    text-align: center;
+    height: 20%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+/* ABOUT */
+
+.about{
+    background-color: var(--orange-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.about__container{
+    display: flex;
+    margin: 3%;
+    border-radius: 7px;
+    width: 80%;
+    height: 60vh;
+    justify-content: space-between;
+}
+
+
+.about-me{
+    width: 55%;
+    background-color: white;
+    border-radius: 5px;
+}
+.about__image{
+    width: 35%;
+    background-color: white;
+    border-radius: 5px;
+}
